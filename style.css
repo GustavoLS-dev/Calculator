@@ -107,3 +107,14 @@ h1 {
 
     background: rgba(255, 255, 255, 0.28);
 }
+
+.box-buttons button:hover {
+    background: rgba(129, 129, 129, 0.22);
+
+    backdrop-filter: blur(26px) saturate(180%);
+    -webkit-backdrop-filter: blur(26px) saturate(180%);
+
+    box-shadow:
+        0 10px 22px rgba(0,0,0,0.3),
+        inset 0 1px 2px rgba(255,255,255,0.65);
+}
