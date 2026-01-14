@@ -20,3 +20,13 @@ function result(){
         display.value = 'Error'
     }
 }
+
+const clickSound = document.getElementById("clickSound");
+const buttons = document.querySelectorAll(".box-buttons button");
+
+buttons.forEach(button => {
+    button.addEventListener("mousedown", () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
+    });
+});
